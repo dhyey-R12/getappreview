@@ -152,3 +152,224 @@ img{
     transform: rotate(-90deg);
 }
 /*header section css end*/
+
+
+/* sanjay css start */
+/* global css start */
+.custom_container {
+    width: 100%;
+    max-width: 1690px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+.custom_row {
+    width: auto;
+    margin: 0 -25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.custom_col {
+    padding: 0 25px;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.section_head h2{
+    margin-bottom: 10px;
+}
+.bttn{
+    display: inline-block;
+    background-color: #FF8001;
+    color: #FFFFFF;
+    line-height: 1;
+    padding: 17px 30px;
+}
+/* global css end */
+/* banner section css start */
+.banner_section{
+    position: relative;
+    padding: 275px 0 183px;
+}
+.banner_section:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../images/banner_before.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.02;
+}
+.banner_section .custom_row{
+    align-items: center;
+}
+.banner_col_cont{
+    width: 55%;
+}
+.banner_col_img{
+    width: 45%;
+}
+.banner_block_cont h1{
+    margin-bottom: 20px;
+}
+.banner_block_cont p{
+    width: 100%;
+    max-width: 810px;
+    margin-bottom: 25px;
+}
+.banner_block_cont .bttn_wrapper{
+    margin-top: 25px;
+}
+.banner_block_img img{
+    width: 100%;
+}
+/* banner section css end */
+
+/* feature section css start */
+.feature_section{
+    padding: 150px 0;
+    background-color: #FFFFFF;
+}
+.feature_head{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.feature_head p{
+    width: 100%;
+    max-width: 810px;
+    margin: auto;
+}
+.feature_col{
+    width: 33.33%;
+}
+.feature_block{
+    background-color: #FFFFFF;
+    padding: 50px 88px 40px;
+    text-align: center;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.feature_block:hover{
+    background-color: #FF8001;
+    color: #FFFFFF;
+}
+.feature_block .icon{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF8001;
+    color: #FFFFFF;
+    border-radius: 50%;
+}
+.feature_block:hover .icon{
+    background-color: #FFFFFF;
+    color: #FF8001;
+}
+.feature_block .icon svg,
+.feature_block .icon svg *{
+    fill: #FFFFFF;
+}
+.feature_block:hover .icon svg,
+.feature_block:hover .icon svg *{
+    fill: #FF8001;
+}
+.feature_block h3{
+    margin-bottom: 10px;
+}
+.feature_block:hover h3{
+    color: #FFFFFF;
+}
+/* feature section css end */
+
+/* reviews section css start */
+.reviews_layer{
+    padding-top: 55px;
+    
+    background-color: #FFFFFF;
+}
+.reviews_layer:nth-child(odd){
+    background-color: rgba(2, 4, 12, 0.02);
+}
+.reviews_layer_col{
+    width: 50%;
+}
+.reviews_layer_cont{
+    padding: 172px 0 227px;
+}
+.reviews_layer_cont p{
+    width: 100%;
+    max-width: 610px;
+}
+.reviews_layer_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.reviews_layer_img img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 551px;
+}
+.reviews_layer:nth-child(even) .custom_row{
+    flex-direction: row-reverse;
+}
+.reviews_layer:nth-child(even) .reviews_layer_img img {
+    left: 0;
+    right: auto;
+}
+/* reviews section css end */
+
+/* workflow section css start */
+.workflow_section{
+    padding: 128px 0;
+    background-color: rgba(2, 4, 12, 0.02);
+}
+.workflow_section .custom_row{
+    align-items: center;
+}
+.workflow_col{
+    width: 50%;
+}
+.workflow_block_cont p{
+    width: 100%;
+    max-width: 672px;
+}
+.workflow_grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 658px;
+    margin: auto;
+}
+.workflow_grid_item{
+    width: 50%;
+}
+.workflow_grid_item.full_width{
+    width: 100%;
+}
+.workflow_grid_item .icon {
+    display: inline-block;
+}
+/* workflow section css end */
+
+/* sanjay css end */
