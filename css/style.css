@@ -45,6 +45,9 @@ h1 {
     line-height: 75px;
     color: #02040C;
 }
+h1 span{
+    color: #FF8001;
+}
 h2 {
     font-weight: 700;
     font-size: 48px;
@@ -137,6 +140,33 @@ h6 {
 
 
 /*header section css start*/
+.site_header {
+    padding: 30px 0;
+}
+.site_header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.site_header .container ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+.site_header nav.custom_navbar ul li {
+    padding: 0 35px;
+}
+.site_header nav.custom_navbar ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #02040C;
+}
+.site_header .header_btn_list ul li {
+    padding: 0 10px;
+}
 .navbar_toggler {
     padding: 0;
     height: 35px;
