@@ -1,0 +1,154 @@
+/*common css start*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body, h1, h2, h3, h4, h5, h6, ul, li, p, a, span{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+body.no_scroll {
+    overflow: hidden;
+}
+a, button, input[type=submit], select{
+    cursor: pointer;
+}
+a, a:hover, a:focus, 
+button, button:hover, button:focus,
+input, input:hover, input:focus, 
+textarea, textarea:hover, textarea:focus,
+select, select:hover, select:focus{
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+/*common css end*/
+
+/*page pre-loader css start*/
+.loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    pointer-events: none;
+    background-color: #fff;
+}
+.loader-wrapper .loader {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: auto;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid rgba(62, 174, 230, 0.2);
+    border-right: 3px solid rgba(62, 174, 230, 0.2);
+    border-bottom: 3px solid rgba(62, 174, 230, 0.2);
+    border-left: 3px solid rgba(62, 174, 230, 0.8);
+    -webkit-animation: loaderSpin 1.5s infinite linear;
+    animation: loaderSpin 1.5s infinite linear;
+}
+@-webkit-keyframes loaderSpin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes loaderSpin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/*page pre-loader css end*/
+
+
+/*header section css start*/
+.navbar_toggler {
+    padding: 0;
+    height: 35px;
+    width: 35px;
+    border: none;
+    outline: none !important;
+    background-color: transparent;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 15px;
+    z-index: 9999;
+}
+.navbar_toggler .navbar_toggler_inner,
+.navbar_toggler .navbar_toggler_inner:after,
+.navbar_toggler .navbar_toggler_inner:before {
+    width: 35px;
+    height: 4px;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #ed6d00;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.navbar_toggler .navbar_toggler_inner{
+    transition: top 75ms ease 0.12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.navbar_toggler .navbar_toggler_inner:after,
+.navbar_toggler .navbar_toggler_inner:before {
+    display: block;
+    content: "";
+}
+.navbar_toggler .navbar_toggler_inner:before {
+    transition: top 75ms ease 0.12s,opacity 75ms ease;
+    top: -12px;
+}
+.navbar_toggler .navbar_toggler_inner:after {
+    transition: bottom 75ms ease 0.12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+    bottom: -12px;
+}
+.navbar_toggler.open_menu .navbar_toggler_inner {
+    transition: top 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) 0.12s;
+    transform: rotate(45deg);
+    top: 0;
+}
+.navbar_toggler.open_menu .navbar_toggler_inner:before {
+    top: 0;
+    transition: top 75ms ease,opacity 75ms ease 0.12s;
+    opacity: 0;
+}
+.navbar_toggler.open_menu .navbar_toggler_inner:after {
+    bottom: 0;
+    transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) 0.12s;
+    transform: rotate(-90deg);
+}
+/*header section css end*/
