@@ -13,12 +13,17 @@ body {
     -moz-font-smoothing: antialiased;
     -font-smoothing: antialiased;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(2 4 12 / 60%);
 }
 body.no_scroll {
     overflow: hidden;
 }
 a, button, input[type=submit], select{
     cursor: pointer;
+    color: #02040C;
 }
 a, a:hover, a:focus, 
 button, button:hover, button:focus,
@@ -33,6 +38,44 @@ img{
     max-width: 100%;
     display: block;
 }
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: #02040C;
+}
+h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #02040C;
+}
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #02040C;
+}
+h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #02040C;
+}
+h5 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #02040C;
+}
+h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #02040C;
+}
+
 /*common css end*/
 
 /*page pre-loader css start*/
