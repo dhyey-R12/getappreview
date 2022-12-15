@@ -189,6 +189,15 @@ p {
 .site_header {
     padding: 30px 0;
     border-bottom: 1px solid rgb(2 4 12 / 20%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+.site_header.header_sticky_active{
+    background-color: #FFFFFF;
 }
 .site_header .container {
     display: flex;
@@ -228,6 +237,14 @@ p {
 }
 .site_header .container ul .border_btn {
     border: 1px solid #02040C;
+}
+.header_menu {
+    flex: 1 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 22%;
+    align-items: center;
 }
 .navbar_toggler {
     padding: 0;
