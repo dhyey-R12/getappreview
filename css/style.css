@@ -15,7 +15,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.5;
     color: rgb(2 4 12 / 60%);
 }
 body.no_scroll {
@@ -42,7 +42,7 @@ img{
 h1 {
     font-weight: 700;
     font-size: 60px;
-    line-height: 75px;
+    line-height: 1.4;
     color: #02040C;
 }
 h2 span,
@@ -52,37 +52,37 @@ h1 span{
 h2 {
     font-weight: 700;
     font-size: 48px;
-    line-height: 72px;
+    line-height: 1.3;
     color: #02040C;
 }
 h3 {
     font-weight: 600;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 1.2;
     color: #02040C;
 }
 h4 {
     font-weight: 600;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.2;
     color: #02040C;
 }
 h5 {
     font-weight: 600;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.3;
     color: #02040C;
 }
 h6 {
     font-weight: 600;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.5;
     color: #02040C;
 }
 p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.5;
     color: rgb(2 4 12 / 60%);
 }
 .container {
@@ -126,11 +126,10 @@ p {
     padding: 9px 30px;
     transition: all 0.3s ease;
     border-radius: 4px;
-    display: block;
+    display: inline-block;
     background-color: #FF8001;
     color: #fff;
     border: 1px solid #FF8001;
-    max-width: max-content;
 }
 /*common css end*/
 
@@ -190,6 +189,15 @@ p {
 .site_header {
     padding: 30px 0;
     border-bottom: 1px solid rgb(2 4 12 / 20%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+.site_header.header_sticky_active{
+    background-color: #FFFFFF;
 }
 .site_header .container {
     display: flex;
@@ -229,6 +237,14 @@ p {
 }
 .site_header .container ul .border_btn {
     border: 1px solid #02040C;
+}
+.header_menu {
+    flex: 1 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 22%;
+    align-items: center;
 }
 .navbar_toggler {
     padding: 0;
@@ -385,6 +401,7 @@ p {
 }
 .banner_section .custom_row{
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 .banner_col_cont{
     width: 55%;
@@ -400,7 +417,7 @@ p {
     max-width: 810px;
     margin-bottom: 25px;
 }
-.banner_block_cont .bttn_wrapper{
+.banner_block_cont .border_orange{
     margin-top: 25px;
 }
 .banner_block_img img{
@@ -453,6 +470,9 @@ p {
     background-color: #FFFFFF;
     color: #FF8001;
 }
+.feature_block .icon svg{
+    width: 50%;
+}
 .feature_block .icon svg,
 .feature_block .icon svg *{
     fill: #FFFFFF;
@@ -465,7 +485,8 @@ p {
 .feature_block h3{
     margin-bottom: 10px;
 }
-.feature_block:hover h3{
+.feature_block:hover h3,
+.feature_block:hover p{
     color: #FFFFFF;
 }
 /* feature section css end */
@@ -479,8 +500,14 @@ p {
 .reviews_layer:nth-child(odd){
     background-color: rgba(2, 4, 12, 0.02);
 }
+.reviews_layer .custom_row{
+    justify-content: space-between;
+}
 .reviews_layer_col{
     width: 50%;
+}
+.reviews_layer_col_img{
+    width: 36%;
 }
 .reviews_layer_cont{
     padding: 172px 0 227px;
@@ -529,7 +556,7 @@ p {
 .workflow_grid{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     max-width: 658px;
     margin: auto;
 }

@@ -1,0 +1,298 @@
+@media (max-width: 1229px){
+    h1{
+        font-size: 42px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .banner_section{
+        padding: 150px 0 100px;
+    }
+    .feature_section{
+        padding: 100px 0;
+    }
+    .feature_block{
+        padding: 50px 30px;
+    }
+    .feature_block .icon{
+        width: 80px;
+        height: 80px;
+    }
+    .reviews_layer_cont {
+        padding: 100px 0 200px;
+    }
+    .workflow_section{
+        padding: 100px 0;
+    }
+    .plan_section{
+        padding: 100px 0;
+    }
+}
+@media (max-width: 1199px){
+    body, p{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .border_orange {
+        padding: 12px 30px;
+        font-size: 13px;
+    }
+    .site_header_logo img{
+        max-width: 190px;
+    }
+    .header_menu{
+        padding-left: 16%;
+    }
+    .site_header nav.custom_navbar ul li{
+        padding: 0 15px;
+    }
+    .site_header .container ul .header_btns {
+        font-size: 11px;
+    }
+    .reviews_layer_cont {
+        padding: 100px 0;
+    }
+    .workflow_section{
+        padding: 50px 0;
+    }
+    .workflow_grid_item:not(.full_width) .icon img {
+        max-height: 80px;
+    }
+    
+    .workflow_grid_item.full_width .icon img {
+        max-height: 130px;
+    }
+    .plan_section{
+        padding: 50px 0;
+    }
+    .site_footer .footer_about{
+        padding: 50px 0;
+    }
+}
+@media (max-width: 991px){
+    h2{
+        font-size: 24px;
+    }
+    .site_header{
+        padding: 15px 0;
+    }
+    .header_menu{
+        padding: 1%;
+    }
+    .feature_section{
+        padding: 50px 0;
+    }
+    .feature_section .custom_row{
+        margin: 0 -15px;
+    }
+    .feature_section .custom_col{
+        padding: 0 15px;
+    }
+    .feature_block {
+        padding: 30px 15px;
+    }
+    .reviews_layer_cont {
+        padding: 50px 0;
+    }
+    .workflow_grid_item:not(.full_width) .icon img {
+        max-height: 60px;
+    }
+    .workflow_grid_item.full_width .icon img {
+        max-height: 110px;
+    }
+    .thousands_section{
+        padding: 50px 0;
+    }
+    .site_footer .footer_about{
+        padding: 50px 0 0;
+    }
+    .site_footer .footer_col{
+        margin-bottom: 50px;
+    }
+    .site_footer .footer_col:first-child{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .footer_info{
+        text-align: center;
+    }
+    .footer_logo img{
+        max-width: 190px;
+        margin: auto;
+    }
+    .site_footer .footer_col:first-child p{
+        width: 100%;
+        max-width: 360px;
+        margin: 15px auto;
+    }
+    .site_footer ul.social_icon_list{
+        justify-content: center;
+    }
+    .site_footer .copyright{
+        padding: 15px 0;
+    }
+}
+@media (max-width: 767px){
+    h1, h2{
+        font-size: 18px;
+    }
+    .site_header{
+        padding: 15px 0;
+    }
+    .navbar_toggler{
+        display: block;
+    }
+    .header_menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        min-width: 280px;
+        height: 100%;
+        background-color: #FFFFFF;
+        box-shadow: -4px 0px 50px rgba(0, 0, 0, 0.06);
+        padding-top: 80px;
+        transition: all 0.3s ease;
+
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(120%,0);
+    }
+    .site_header.header_menu_active .header_menu{
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+    }
+    nav.custom_navbar,
+    .header_btn_list{
+        width: 100%;
+    }
+    .site_header nav.custom_navbar ul li{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .site_header .container ul{
+        display: block;
+    }
+    .site_header .header_btn_list ul li{
+        margin-bottom: 20px;
+    }
+    .site_header .container ul .header_btns{
+        text-align: center;
+    }
+    .banner_section {
+        padding: 62px 0 85px;
+    }
+    .banner_section .custom_row{
+        margin: 0 -15px;
+    }
+    .banner_section .custom_col{
+        padding: 0 15px;
+    }
+    .banner_col_cont,
+    .banner_col_img{
+        width: 100%;
+    }
+    .banner_block_cont{
+        padding-top: 21px;
+        text-align: center;
+    }
+    .banner_block_cont h1{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .banner_block_cont p{
+        margin-bottom: 10px;
+    }
+    .banner_block_cont .border_orange{
+        margin-top: 10px;
+    }
+    .feature_section{
+        padding: 30px 0 50px;
+    }
+    .feature_head{
+        margin-bottom: 30px;
+    }
+    .feature_col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .feature_block .icon{
+        width: 68px;
+        height: 68px;
+        margin-bottom: 20px;
+    }
+    .reviews_layer{
+        padding-top: 30px;
+    }
+    .reviews_layer_col,
+    .reviews_layer_col_img{
+        width: 100%;
+    }
+    .reviews_layer_cont{
+        text-align: center;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .reviews_layer_img{
+        padding-top: 100%;
+    }
+    .reviews_layer_img img,
+    .reviews_layer:nth-child(even) .reviews_layer_img img{
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .workflow_section{
+        padding: 70px 0 30px;
+    }
+    .workflow_block_cont {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .workflow_col{
+        width: 100%;
+    }
+    .thousands_section{
+        text-align: center;
+    }
+    .thousands_section h2{
+        margin-bottom: 10px;
+    }
+    .thousands_section .custom_col:first-child{
+        margin-bottom: 20px;
+    }
+    .thousands_section .custom_col:first-child,
+    .thousands_section .custom_col:last-child{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 575px){
+    .site_footer .footer_col{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .site_footer .footer_about h4{
+        font-size: 12px;
+    }
+    .site_footer .footer_about p, 
+    .site_footer .footer_about a{
+        font-size: 11px;
+    }
+    .site_footer .footer_col ul.contact_info_list li{
+        padding-left: 20px;
+    }
+    .site_footer .footer_col ul.contact_info_list li img{
+        width: 13px;
+    }
+}
