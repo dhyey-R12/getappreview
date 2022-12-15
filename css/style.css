@@ -200,6 +200,7 @@ p {
     right: 0;
     width: 100%;
     z-index: 999;
+    background-color: #fff;
 }
 .site_header.header_sticky_active{
     background-color: #FFFFFF;
