@@ -67,12 +67,15 @@
     .workflow_grid_item.full_width .icon img {
         max-height: 130px;
     }
-    .plan_section{
-        padding: 50px 0;
+    .plan_section {
+        padding: 80px 0;
     }
     .site_footer .footer_about{
         padding: 50px 0;
-    }
+        }
+        .plan_section .progress {
+            display: block;
+        }
 }
 @media (max-width: 991px){
     h2{
@@ -272,6 +275,26 @@
     .thousands_section .custom_col:last-child{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .plan_section .plan_box_slider {
+         margin: 0 0; 
+     }
+     .plan_section .plan_box ul li.plan_box_heading h2 {
+        font-size: 54px;
+        line-height: 81px;
+    }
+    .plan_section .plan_box {
+        padding: 20px 24px;
+    }
+    .plan_section .plan_box ul li.plan_box_heading h2 {
+        font-size: 54px;
+        line-height: 81px;
+    }
+    .plan_section .plan_box ul li.plan_box_btn {
+        padding-top: 30px;
+    }
+    .plan_section .plan_box ul li.plan_box_heading {
+        padding-bottom: 50px;
     }
 }
 @media (max-width: 575px){

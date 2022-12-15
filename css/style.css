@@ -169,8 +169,8 @@ p {
 }
 @-webkit-keyframes loaderSpin {
     0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+       -webkit-transform: rotate(0deg);
+       transform: rotate(0deg);
     }
     100% {
         -webkit-transform: rotate(360deg);
@@ -224,6 +224,10 @@ p {
     font-size: 16px;
     line-height: 24px;
     color: #02040C;
+    transition: all 0.3s ease;
+}
+.site_header nav.custom_navbar ul li a:hover {
+    color: #ff8001;
 }
 .site_header .header_btn_list ul li {
     padding: 0 10px;
@@ -349,6 +353,10 @@ p {
 .site_footer .footer_about a, 
 .site_footer .footer_about h4 {
     color: #fff;
+    transition: all 0.3s ease;
+}
+.site_footer .footer_about a:hover {
+    color: #ff8001;
 }
 .site_footer .footer_about h4 {
     margin-bottom: 12px;
@@ -593,7 +601,7 @@ p {
 .plan_section .heading_text {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin: 0 auto 20px;
     text-align: center;
 }
 .plan_section .custom_row {
@@ -670,6 +678,38 @@ p {
 .plan_section .plan_box:hover ul li.plan_box_btn .border_orange {
     border-color: #FFFFFF;
 }
+.plan_section .progress {
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to right, black, black);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .4s ease-in-out;
+    display: none;
+}
+.plan_section .plan_box_list {
+    overflow: hidden;
+    width: 100%;
+}
+.plan_section .plan_box_slider {
+    margin: 0 -15px;
+}
+.plan_section .plan_box_slider .slick-track {
+    display: flex;
+}
+.plan_section .plan_box_slider .slick-slide {
+    margin: 20px 15px;
+    display: flex;
+    height: auto;
+}
+.plan_section ul.slick-dots {
+    display: none !important;
+}
+
 /*plans section css end*/
 
 /*thousands section css end*/
