@@ -131,6 +131,11 @@ p {
     color: #fff;
     border: 1px solid #FF8001;
 }
+.border_orange:hover,
+.border_orange:focus {
+    background-color: transparent;
+    color: #FF8001;
+}
 /*common css end*/
 
 /*page pre-loader css start*/
@@ -230,10 +235,20 @@ p {
     color: #02040C;
     display: block;
 }
+.site_header .container ul .header_btns:hover,
+.site_header .container ul .header_btns:focus {
+    background-color: #02040C;
+    color: #FFFFFF;
+}
 .site_header .container ul .border_orange {
     background-color: #FF8001;
     color: #fff;
     border: 1px solid #FF8001;
+}
+.site_header .container ul .border_orange:hover,
+.site_header .container ul .border_orange:focus {
+    background-color: transparent;
+    color: #FF8001;
 }
 .site_header .container ul .border_btn {
     border: 1px solid #02040C;
@@ -243,7 +258,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 22%;
+    padding-left: calc(100vw - 85vw);
     align-items: center;
 }
 .navbar_toggler {
