@@ -1,3 +1,8 @@
+@media (max-width: 1399px){
+    .header_menu {
+        padding-left: calc(100vw - 88vw);
+    }
+}
 @media (max-width: 1229px){
     h1{
         font-size: 42px;
@@ -49,7 +54,7 @@
         max-width: 190px;
     }
     .site_header nav.custom_navbar ul li{
-        padding: 0 15px;
+        padding: 0 12px;
     }
     .site_header .container ul .header_btns {
         font-size: 11px;
@@ -116,10 +121,6 @@
     }
     .site_footer .footer_col{
         margin-bottom: 50px;
-    }
-    .site_footer .footer_col:first-child{
-        flex: 0 0 100%;
-        max-width: 100%;
     }
     .footer_info{
         text-align: center;
@@ -298,10 +299,10 @@
     }
 }
 @media (max-width: 575px){
-    .site_footer .footer_col{
+    /*.site_footer .footer_col{
         flex: 0 0 50%;
         max-width: 50%;
-    }
+    }*/
     .site_footer .footer_about h4{
         font-size: 12px;
     }
